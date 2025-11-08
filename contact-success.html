@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Handler - Shreyas Portfolio</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .success {
+            color: #28a745;
+        }
+        .error {
+            color: #dc3545;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form Handler</h1>
+        <p class="success">✅ Form submitted successfully!</p>
+        <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+        <a href="index.html" class="btn">Back to Portfolio</a>
+    </div>
+
+    <script>
+        // This is a placeholder contact form handler
+        // In a real implementation, you would:
+        // 1. Process the form data
+        // 2. Send email using a service like EmailJS, Formspree, or Netlify Forms
+        // 3. Store data in a database
+        // 4. Send confirmation emails
+        
+        console.log('Contact form handler loaded');
+        
+        // Example: Get form data from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const email = urlParams.get('email');
+        const subject = urlParams.get('subject');
+        const message = urlParams.get('message');
+        
+        if (name) {
+            console.log('Form data received:', { name, email, subject, message });
+        }
+        
+        // Example: Send data to a webhook or API
+        // fetch('/api/contact', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify({ name, email, subject, message })
+        // });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://shreyas.github.io/portfolio/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all other content
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /assets/

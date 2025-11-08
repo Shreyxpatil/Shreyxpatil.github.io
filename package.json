@@ -1,0 +1,33 @@
+{
+  "name": "shreyas-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Shreyas - ML & Computer Vision Engineer",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "portfolio",
+    "machine-learning",
+    "computer-vision",
+    "ai",
+    "deep-learning",
+    "python",
+    "tensorflow",
+    "pytorch"
+  ],
+  "author": "Shreyas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shreyas/portfolio"
+  },
+  "homepage": "https://shreyas.github.io/portfolio",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
