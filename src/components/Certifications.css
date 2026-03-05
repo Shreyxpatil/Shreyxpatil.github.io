@@ -1,0 +1,21 @@
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  border-left: 3px solid var(--cert-color, var(--accent-cyan));
+}
+.cert-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+.cert-title { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem; }
+.cert-issuer { font-size: 0.72rem; }
+
+@media (max-width: 900px) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .cert-grid { grid-template-columns: 1fr; } }

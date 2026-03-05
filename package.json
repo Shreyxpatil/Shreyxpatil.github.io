@@ -1,33 +1,30 @@
 {
   "name": "shreyas-portfolio",
+  "private": true,
   "version": "1.0.0",
-  "description": "Portfolio website for Shreyas - ML & Computer Vision Engineer",
-  "main": "index.html",
+  "type": "module",
   "scripts": {
-    "start": "python -m http.server 8000",
-    "build": "echo 'No build process needed for static site'",
-    "deploy": "echo 'Deploy to your preferred hosting service'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
-  "keywords": [
-    "portfolio",
-    "machine-learning",
-    "computer-vision",
-    "ai",
-    "deep-learning",
-    "python",
-    "tensorflow",
-    "pytorch"
-  ],
-  "author": "Shreyas",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shreyas/portfolio"
+  "dependencies": {
+    "framer-motion": "^11.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.0",
+    "react-scroll": "^1.9.0",
+    "react-type-animation": "^3.2.0",
+    "tsparticles": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0"
   },
-  "homepage": "https://shreyas.github.io/portfolio",
-  "devDependencies": {},
-  "dependencies": {},
-  "engines": {
-    "node": ">=14.0.0"
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "gh-pages": "^6.1.0",
+    "vite": "^5.1.0"
   }
 }
