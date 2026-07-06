@@ -232,9 +232,9 @@ export const experiences = [
     color: 'var(--accent-cyan)',
   },
   {
-    company: 'GateTutor InfoEdge Pvt. Ltd.',
-    role: 'Machine Learning Developer',
-    period: 'Jan 2025 – Sep 2025',
+    company: 'Microsage Pvt. Ltd.',
+    role: 'Jr. Machine Learning Developer',
+    period: 'July 2025 – Sep 2025',
     type: 'Full-time',
     highlights: [
       'Built a production-grade AI learning platform integrating MCQ generation, chatbot support, diagram rendering, code plagiarism detection, and performance analytics.',
