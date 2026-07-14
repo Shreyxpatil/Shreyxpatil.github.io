@@ -19,7 +19,7 @@ const sectionConfig = [
     key: 'professional',
     label: '// professional',
     title: 'Professional Projects',
-    subtitle: 'Systems built at Cloud Analogy and GateTutor InfoEdge — production-grade, real-world impact',
+    subtitle: 'Systems built at Cloud Analogy and Microsage Pvt Ltd — production-grade, real-world impact',
     accent: 'var(--accent-cyan)',
     projects: professionalProjects,
   },
